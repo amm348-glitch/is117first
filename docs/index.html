@@ -1,46 +1,111 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My First Website</title>
-    <meta name="description" content="A simple GitHub Pages site." />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main class="container">
-      <header class="hero">
-        <p class="eyebrow">GitHub Pages</p>
-        <h1>My First Website</h1>
-        <p class="lead">
-          A simple site published from the <strong>docs</strong> folder.
-        </p>
-        <div class="actions">
-          <a class="button" href="https://github.com">View on GitHub</a>
-          <a class="button ghost" href="#about">Learn more</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NJIT student portfolio focused on data analytics, financial analysis, and business strategy for NYC/NJ FinTech recruiters." />
+  <title>Arjun Merchant | Data + Finance + Strategy</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#top">Arjun Merchant</a>
+      <div class="nav-links">
+        <a href="#case-studies">Case Studies</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <!-- HERO (5-second test) -->
+    <section class="hero">
+      <p class="eyebrow">NJIT • FinTech-focused • NYC/NJ</p>
+      <h1>Data Analytics + Financial Analysis + Business Strategy</h1>
+      <p class="subhead">
+        I build clear dashboards, actionable insights, and strategy-ready analysis based on real internship experience
+        (GE Vernova, Data Nova).
+      </p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="#contact">Request My Technical Resume</a>
+        <a class="btn secondary" href="https://github.com/amm348-glitch" target="_blank" rel="noreferrer">View My GitHub Contributions</a>
+      </div>
+
+      <div class="quick-proof">
+        <div class="chip">GE Vernova — Product/Strategy</div>
+        <div class="chip">Data Nova — Data Analytics</div>
+        <div class="chip">Power BI • Tableau • Microsoft 365 Certified</div>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section id="case-studies" class="section">
+      <h2>Case Studies</h2>
+      <p class="section-lede">Two proof points that show how I work: structured thinking, real deliverables, measurable impact.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>GE Vernova — Product / Business Strategy</h3>
+          <p class="meta">Focus: cross-functional execution, stakeholder alignment, data-driven decisions</p>
+          <ul>
+            <li><strong>Problem:</strong> Supported product/strategy work in a complex corporate environment.</li>
+            <li><strong>What I did:</strong> Built stakeholder-ready deliverables and analysis to support decision-making.</li>
+            <li><strong>Tools:</strong> Microsoft 365 (Excel/PowerPoint), structured analysis & communication.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Data Nova — Data Analytics</h3>
+          <p class="meta">Focus: dashboards, insights, translating data into decisions</p>
+          <ul>
+            <li><strong>Problem:</strong> Needed clear insights from real datasets for stakeholders.</li>
+            <li><strong>What I did:</strong> Built dashboards and summarized findings into actionable insights.</li>
+            <li><strong>Tools:</strong> Power BI, Tableau, reporting.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="panel">
+          <h3>Analytics</h3>
+          <p>Power BI, Tableau, dashboards, insight summaries, stakeholder-ready reporting.</p>
         </div>
-      </header>
+        <div class="panel">
+          <h3>Finance</h3>
+          <p>Financial analysis from coursework + internships; translating numbers into decisions.</p>
+        </div>
+        <div class="panel">
+          <h3>Strategy</h3>
+          <p>Structured problem-solving, communication, and delivering work across corporate functions.</p>
+        </div>
+      </div>
+    </section>
 
-      <section id="about" class="card">
-        <h2>About this site</h2>
-        <p>
-          This is a minimal starter page for GitHub Pages. Edit the HTML and
-          CSS in the docs folder, then push to your repository.
-        </p>
-      </section>
+    <!-- CONTACT / LEAD-GEN -->
+    <section id="contact" class="section contact">
+      <h2>Request My Technical Resume</h2>
+      <p class="section-lede">
+        Recruiter inquiries: send me a message and I’ll share my resume + a short project brief.
+      </p>
 
-      <section class="card">
-        <h2>Next steps</h2>
-        <ol>
-          <li>Customize the text and links.</li>
-          <li>Add more pages in the docs folder.</li>
-          <li>Enable Pages in repo settings (source: docs).</li>
-        </ol>
-      </section>
+      <a class="btn primary" href="mailto:amm348@njit.edu?subject=Resume%20Request%20-%20Portfolio&body=Hi%20Arjun%2C%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20request%20your%20technical%20resume.%0A%0AThanks%2C">
+        Email to Request Resume
+      </a>
+    </section>
 
-      <footer class="footer">
-        <p>Built with plain HTML and CSS.</p>
-      </footer>
-    </main>
-  </body>
+    <footer class="footer">
+      <p>© <span id="year"></span> Arjun Merchant • NJIT • NYC/NJ</p>
+    </footer>
+  </main>
+
+  <script src="./js/scripts.js"></script>
+</body>
 </html>
